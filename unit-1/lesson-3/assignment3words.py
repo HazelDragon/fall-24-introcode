@@ -1,0 +1,1 @@
+word_list = ["these", "are", "words", "for", "coding"]
