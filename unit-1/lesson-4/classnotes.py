@@ -1,34 +1,28 @@
 import sys
 from PIL import Image
 
-if len(sys.argv) != 2:
-    exit("This command requires one argument: the name of an image file")
+# if len(sys.argv) != 2:
+#     exit("This command requires one argument: the name of an image file")
 
-img = Image.open( sys.argv[1] )
+# img = Image.open( sys.argv[1] )
 
-img.save( sys.argv[1] + ".jpg" )
-img.save( sys.argv[1] + ".gif" )
-img.save( sys.argv[1] + ".tiff" )
-img.save( sys.argv[1] + ".png" )
-
-
-
-
-
-
+# img.save( sys.argv[1] + ".jpg" )
+# img.save( sys.argv[1] + ".gif" )
+# img.save( sys.argv[1] + ".tiff" )
+# img.save( sys.argv[1] + ".png" )
 
 
 #####################################################################################
 #####################################################################################
 # PUT ONE red PIXEL
 
-# img = Image.open( sys.argv[1] )
-# one_pixel = img.getpixel( (0,0) )
+img = Image.open( sys.argv[1] )
+one_pixel = img.getpixel( (0,0) )
 
-# print(one_pixel)
+print(one_pixel)
 
-# img.putpixel( (10,10), (255,0,0) )
-# img.save("new.jpg")
+img.putpixel( (10,10), (255,0,0) )
+img.save("new.jpg")
 
 
 
