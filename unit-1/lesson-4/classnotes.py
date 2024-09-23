@@ -56,22 +56,22 @@ from PIL import Image
 #####################################################################################
 # # FILTER PIXELS AS A LIST
 
-img = Image.open( sys.argv[1] )
-img_hsv = img.convert(mode="HSV")
-img_hsv_data = img_hsv.getdata()
+# img = Image.open( sys.argv[1] )
+# img_hsv = img.convert(mode="HSV")
+# img_hsv_data = img_hsv.getdata()
 
-new_img_data = []
-for p in img_hsv_data:
-    print(p)
-    if p[2] < 55:
-        new_img_data.append( (255,255,255) )
-    else:
-        new_img_data.append(p)
+# new_img_data = []
+# for p in img_hsv_data:
+#     print(p)
+#     if p[2] < 35:
+#         new_img_data.append( (255,0,155) )
+#     else:
+#         new_img_data.append(p)
 
 
-img_hsv.putdata(new_img_data)
-img_rgb = img_hsv.convert("RGB")
-img_rgb.save("filtered.jpg")
+# img_hsv.putdata(new_img_data)
+# img_rgb = img_hsv.convert("RGB")
+# img_rgb.save("filtered.jpg")
 
 
 
