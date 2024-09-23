@@ -16,13 +16,14 @@ from PIL import Image
 #####################################################################################
 # PUT ONE red PIXEL
 
-img = Image.open( sys.argv[1] )
-one_pixel = img.getpixel( (0,0) )
+# img = Image.open( sys.argv[1] )
+# one_pixel = img.getpixel( (0,0) )
 
-print(one_pixel)
+# print(one_pixel)
 
-img.putpixel( (10,10), (255,0,0) )
-img.save("new.jpg")
+# img.putpixel( (10,10), (255,0,0) )
+# img.putpixel( (20,20), (0,0,255) )
+# img.save("newbridge.png")
 
 
 
